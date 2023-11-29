@@ -33,9 +33,7 @@ jobs:
         run: mvn -B -ntp clean install
       - name: Release
         if: >
-          github.event_name != 'pull_request' &&
-          github.ref_name == 'main' &&
-          contains(github.event.head_commit.message, '[release]')
+          github.ref_name == 'main'
         run: |
           git config --global user.email "cto@ionite.com"
           git config --global user.name "ionite"

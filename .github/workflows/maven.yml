@@ -1,3 +1,4 @@
+# https://s01.oss.sonatype.org/#nexus-search;quick~com.ionite
 name: ionite CI
 
 on:
@@ -37,7 +38,7 @@ jobs:
         run: |
           git config --global user.email "cto@ionite.com"
           git config --global user.name "ionite"
-          mvn -B -ntp -DskipTests -Pci-cd -Darguments="-DskipTests -Pci-cd" release:clean release:prepare release:perform
+          mvn -B -ntp -DskipTests -Pci-cd deploy
         env:
           MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
           MAVEN_PASSWORD: ${{ secrets.OSSRH_TOKEN }}

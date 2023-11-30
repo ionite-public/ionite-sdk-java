@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.ionite</groupId>
     <artifactId>sdk</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.2-SNAPSHOT</version>
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>Supports the creation of components for the ionite platform</description>
@@ -26,7 +26,15 @@
             <email>cto@ionite.com</email>
         </developer>
     </developers>
-
+    
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+    
     <distributionManagement>
         <snapshotRepository>
             <id>ossrh</id>

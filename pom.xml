@@ -20,6 +20,12 @@
         <url>https://github.com/ionite-public/ionite-sdk-java/tree/main</url>
     </scm>
 
+    <url>https://github.com/ionite-public</url>
+    <organization>
+        <name>ionite</name>
+        <url>https://github.com/ionite-public</url>
+    </organization>
+    
     <developers>
         <developer>
             <name>ionite development team</name>
